@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Help</title>
+    <link rel=" stylesheet" href="about_css.css">
+
+    <body style="background-color: black; ">
+        <h1>India's Digital book<br/>Udhaar book </h1>
+        <img id="toplogo" style="position: relative; width: 100px; height: 120px; bottom: 70px; left:30px;"
+    src="https://dewey.tailorbrands.com/production/brand_version_mockup_image/815/4141253815_3d0e0abd-1acc-4639-bfa1-9db6d43d962d.png?cb=1605634701"
+    alt="logo">
+
+    <title>Send email using SMTPjs</title>
+<div style="color: cornsilk; font-size: 25px;">Query</div>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+<body>
+<form method="post">
+	<input style="width: 300px; height: 140px; " type="text" name="" id="query" placeholder="Enter Your Email Id then Query">
+    <input style="width: 50px; height: 40px; position: relative; bottom: -100px; left: -19pc;" type="button" value="Ask !" onclick="sendEmail()"/>
+</form>
+<script type="text/javascript">
+function sendEmail(){
+	var x  = document.getElementById("query").value
+Email.send({
+SecureToken : "b015084b-9ffc-4d18-9079-5276aa4087bb",
+    To : 'rokadesudesh@gmail.com',
+    From : "mahirokade@gmail.com",
+    Subject : "First email using smtp JS",
+    Body : x
+}).then(
+  message => alert(message)
+);
+}
+</script>
+</html>
+    </head>
+</html>

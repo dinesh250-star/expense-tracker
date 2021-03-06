@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<link rel=" stylesheet" href="2nd_css.css">
+<script src="https://ajax.googleapis.com/ajax
+/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="activity.js"></script>
+<link rel=" stylesheet" href="activity.css">
+
+<!--Upper Seperate line-->
+<hr style="position: relative; bottom: -55px;"></hr>
+<h1  style="position: relative; bottom: -50px;">India's Digital book<br/>Udhaar book </h1>
+
+<img id="toplogo" style="position: relative; width: 100px; height: 120px; bottom: 90px; left:30px;"
+    src="https://dewey.tailorbrands.com/production/brand_version_mockup_image/815/4141253815_3d0e0abd-1acc-4639-bfa1-9db6d43d962d.png?cb=1605634701"
+    alt="logo">
+
+
+<div id="manage">Manage your Buissness and Personal Account</div>
+<img id="image" style="position: relative; width: 400px; height: 200px; left: 58pc; border-radius: 8px"
+        src="https://image.freepik.com/free-vector/online-education-hand-holding-paper-exam-with-laptop-coffee-book-concept-cartoon-illustration_201904-441.jpg"
+        alt="laptop img">
+        
+
+        
+        
+       
+        <div id="home" style="position: relative; bottom: 33pc; left:50pc;"><a href="">Refresh</a></div>
+        <div id="about" style="position: relative; bottom: 34.5pc; left: 55pc;"><a href="aboutus.html">About Us</a></div>
+        <div style="position: relative; bottom: 36.2pc; left: 65pc; font-size: 1.5pc;"><a href="index0.html">Registration</a></div>
+        
+        <h2 style="position: relative; color: aliceblue; top: 100px; left: 10px;">Calculator</h2>
+
+    <head>
+        <title>Uddhar book</title>
+    </head>
+
+    <div style="color: aliceblue; font-size: 18px; position: relative; bottom: 20pc;">Udhaar App helps you manage your money flow and be in complete control of your business.<br>
+        It is complete accounting in itself.<br> It is much more simpler than double entry accounting methods like Tally.<br> No prior accounting knowledge is required to use this application.</div>
+    
+    <div style="color: cornsilk; position: relative; left: 40pc;">1.Enter the amount you want to add on credit column.<br>2.Enter the amount you want to deduct on debit column.<br>3.The values entered should not be negative.<br>4.If you have null value you can enter zero but dont leave it empty.<br>5.After entering the values click on submit button<br>6.You can check the values by clicking on check balance.</div>
+   
+<hr style="position: relative; bottom: 180px;">
+        <head>
+            <script style="position: relative; left: 60pc;">
+                //function that display value 
+                function dis(val) {
+                    document.getElementById("result").value += val
+                }
+
+                //function that evaluates the digit and return result 
+                function solve() {
+                    let x = document.getElementById("result").value
+                    let y = eval(x)
+                    document.getElementById("result").value = y
+                }
+
+                //function that clear the display 
+                function clr() {
+                    document.getElementById("result").value = ""
+                } 
+
+
+
+                
+            </script>
+            <!-- for styling -->
+            <style>
+                .title {
+                    margin-bottom: 10px;
+                    text-align: center;
+                    width: 210px;
+                    color: green;
+                    border: solid black 2px;
+                }
+
+                input[type="button"] {
+                    background-color: green;
+                    color: black;
+                    border: solid black 2px;
+                    width: 100%
+                }
+
+                input[type="text"] {
+                    background-color: rgb(236, 231, 231);
+                    border: solid black 2px;
+                    width: 100%
+                }
+            </style>
+        </head>
+        <!-- create table -->
+
+<body style="background-color:rgb(0, 0, 0)">
+
+
+            <table border="1" style="position: relative; bottom: 50px;">
+                <tr >
+                    <td colspan="3"><input type="text" id="result" /></td>
+                    <!-- clr() function will call clr to clear all value -->
+                    <td><input type="button" value="c" onclick="clr()" /> </td>
+                </tr>
+                <tr>
+                    <!-- create button and assign value to each button -->
+                    <!-- dis("1") will call function dis to display value -->
+                    <td><input type="button" value="1" onclick="dis('1')" /> </td>
+                    <td><input type="button" value="2" onclick="dis('2')" /> </td>
+                    <td><input type="button" value="3" onclick="dis('3')" /> </td>
+                    <td><input type="button" value="/" onclick="dis('/')" /> </td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="4" onclick="dis('4')" /> </td>
+                    <td><input type="button" value="5" onclick="dis('5')" /> </td>
+                    <td><input type="button" value="6" onclick="dis('6')" /> </td>
+                    <td><input type="button" value="-" onclick="dis('-')" /> </td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="7" onclick="dis('7')" /> </td>
+                    <td><input type="button" value="8" onclick="dis('8')" /> </td>
+                    <td><input type="button" value="9" onclick="dis('9')" /> </td>
+                    <td><input type="button" value="+" onclick="dis('+')" /> </td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="." onclick="dis('.')" /> </td>
+                    <td><input type="button" value="0" onclick="dis('0')" /> </td>
+                    <!-- solve function call function solve to evaluate value -->
+                    <td><input type="button" value="=" onclick="solve()" /> </td>
+                    <td><input type="button" value="*" onclick="dis('*')" /> </td>
+                </tr>
+                </table>
+
+
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            background-color: rgb(223, 225, 230);
+            }
+    </style>
+
+    <table style="width: 100%; ">
+        <tr>       
+            <th>Credit</th>
+            <th>Debit</th>
+            <th>Credit Description</th>
+            <th>Debit Description</th>
+                            
+            </tr>
+
+        <tr style="height: 70px;">
+            <td><input name="credit" id="credit" type="number"></td>
+            <td><input name="debit" id="debit" type="number"></td>
+            <td><input type="text" id="credit_d" style="width: 90%;"></td>
+            <td><input type="text" id="debit_d" style="width: 90%; "></td>
+                
+    </table>
+
+
+    </tr>
+        <input type="submit" name="submit" id="submit" value="Submit"
+            style="position: relative; left: 68pc; font-size: 20px; bottom: -5px;">
+        <input type="submit" name="checkbalance"  id="checkbalance" value="checkbalance"
+            style="position: relative; left: 69pc; font-size: 20px; bottom: -5px;">
+
+</body>
+<div class="checkbalance1" id="checkbalance1">    
+</div>
+
+<title>Send email using SMTPjs</title>
+<div style="color: cornsilk; font-size: 25px;">Query</div>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+<body>
+<form method="post">
+	<input style="width: 300px; height: 140px; " type="text" name="" id="query" placeholder="Enter Your Email Id then Query">
+    <input style="width: 50px; height: 40px; position: relative; bottom: -100px; left: -19pc;" type="button" value="Ask !" onclick="sendEmail()"/>
+</form>
+<script type="text/javascript">
+function sendEmail(){
+	var x  = document.getElementById("query").value
+Email.send({
+SecureToken : "b015084b-9ffc-4d18-9079-5276aa4087bb",
+    To : 'rokadesudesh@gmail.com',
+    From : "mahirokade@gmail.com",
+    Subject : "First email using smtp JS",
+    Body : x
+}).then(
+  message => alert(message)
+);
+}
+</script>
+</html>

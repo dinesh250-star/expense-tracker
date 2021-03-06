@@ -1,0 +1,97 @@
+#body{
+    background-color: black;
+}
+
+#Loginemail{
+    position: relative;
+    left: 550px;
+    bottom: 80px;
+}
+
+h1 {
+    font-size: 50px;
+    position: relative;
+    left: 10px;
+    bottom: -100px;
+    
+  
+    text-decoration: underline;
+    font-style: italic;
+
+
+    background: linear-gradient(135deg, rgb(180, 180, 252), rgb(76, 1, 105));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    padding: 0.5em;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+   
+}
+
+#Loginemail{
+    width:650px;
+    height: 15px;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 0px;
+    border-radius: 5px 5px 5px 5px; 
+    font-size: 20px;
+    position: relative;
+    bottom: 40px;
+
+}
+
+#Number{
+    width: 350px;
+    position: relative;
+    left: 700px;
+    bottom: 300px;
+    border: 1px solid black;
+    padding: 30px;
+    margin: 20px;
+    font-size: 40px;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 5px 5px 5px 5px;
+    text-size-adjust: 25px;
+}
+h2{
+    position: relative;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+
+}
+#Login{
+    left: 50px;
+}
+
+#Login-box{
+    left: 40px;
+}
+body{
+    background-color: rgb(219, 232, 236);
+}
+
+#emailplaceholder{
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-overflow: ellipsis;
+}
+
+#registration{
+    font-size: 100px; 
+    font-style: italic;
+}
+
+#developer{
+    color: blanchedalmond;
+}
+
+h4{
+    color: blanchedalmond;
+}

@@ -1,0 +1,82 @@
+
+
+h1{
+    right: 70px;
+}
+
+
+#logos{
+    position: relative;
+    left: 50pc;
+    bottom: 5pc;
+}
+
+
+h1{
+    right: 70px;
+    color: rgb(44, 75, 250);
+    position: relative; 
+    left: 150px; 
+    bottom:-15pc ;
+    font-size: 50px;
+    font-style: italic;
+}
+#manage{
+    color:darkblue;
+    position: relative;
+    bottom: -1px;
+    font-style: italic;
+    font-size: x-large; 
+    left: 4px;
+}
+
+h2{
+    position: relative; 
+    left: 70pc; 
+    bottom: 40px;
+}
+
+#about{
+    position: relative;
+    left: 61pc;
+    font-size: 60px;
+    bottom: 20pc; 
+    font-size: 21px;
+    font-family: 'Regular', Helvetica, Arial, sans-serif;
+    display: block;
+    padding: 0 20px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#help{
+    position: relative;
+    left: 72pc; 
+    font-size: 20px; 
+    bottom: 22pc; 
+    font-size: 25px;
+}
+
+#home{
+    position: relative;
+    left: 56pc; 
+    font-size: 20px; 
+    bottom: 18.5pc; 
+    font-size: 25px;
+}
+
+#image{
+    width: 500px;
+    height: 600px;
+    display: block;
+
+
+}
+
+#logos{
+    position: relative;
+    left: 1px;
+    top: -200pc; 
+}
+
